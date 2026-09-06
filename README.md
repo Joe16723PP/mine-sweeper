@@ -12,12 +12,15 @@ The first click is always safe. Clear every safe square without hitting a mine.
 - **Light and dark theme** — follows the system on the first visit, then remembers your pick
 - **Hints** — up to 3 guaranteed moves per game
 - **Score** — shown on the game-over modal, with round stats and a scoring guide below the board
+- **Career and best times** — played, wins, win rate, and streaks, plus best Classic times and best Race leftovers per difficulty (saved in the browser)
+- **Keyboard** — arrows move the focus, Enter or Space opens (or chords) the focused square, F flags it
 
 ## How to play
 
 - Click a square to reveal it. Right-click, or use **Flag**, to mark a mine.
 - Click a number when the flags around it match that number to clear the rest.
 - The face button starts a new game.
+- Use the arrow keys to move around the board without a mouse.
 
 ## Scoring
 
