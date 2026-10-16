@@ -10,9 +10,9 @@ The first click is always safe. Clear every safe square without hitting a mine.
 - **Classic or Race** — Race counts down (90 / 150 / 210 seconds)
 - **English and Thai** — language choice is saved
 - **Light and dark theme** — follows the system on the first visit, then remembers your pick
-- **Hints** — up to 3 guaranteed moves per game
-- **Score** — shown on the game-over modal, with round stats and a scoring guide below the board
-- **Career and best times** — played, wins, win rate, and streaks, plus best Classic times and best Race leftovers per difficulty (saved in the browser)
+- **Hints** — up to 3 guaranteed safe or mine moves per game. A position that needs a guess does not spend a hint.
+- **Score** — shown on a result overlay that covers the board. Difficulty, mode, and the other settings stay on the page. Round stats and a scoring guide sit below the board.
+- **Career and best times** — played, wins, win rate, and streaks update once when a round ends in a win, a mine, or a timeout. Best Classic time is the lowest elapsed time. Best Race leftover is the highest time remaining. A best changes only when that win is strictly better than the saved record. Switching difficulty or mode mid-round does not record the round. Records stay in the browser.
 - **Keyboard** — arrows move the focus, Enter or Space opens (or chords) the focused square, F flags it
 
 ## How to play
@@ -32,7 +32,9 @@ The score appears only when the game ends.
 | Correct flag | +20 |
 | Wrong flag | −15 |
 | Unused hint | +30 |
-| Each second left on a clear | +8 |
+| Time bonus | +8 per bonus second |
+
+The time bonus is not the live Classic clock. Classic bonus seconds are `max(0, Race limit − elapsed)`: 90 on Easy, 150 on Medium, and 210 on Hard. A Classic round longer than that limit adds 0. Race bonus seconds are the countdown still left when you clear the board. The round breakdown lists those bonus seconds.
 
 ## Run locally
 
